@@ -13,7 +13,7 @@ export const portfolioData = {
     description: "As a digital product designer with a strong focus on visual design and Framer websites, he collaborates closely with teams to craft seamless, user-centered, and reliable partner in bringing ideas to life.",
     cta: {
       text: "Email Me",
-      email: "hello@carter.design",
+      email: "sujoygarai89@gmail.com",
       subject: "Project Inquiry",
     },
     portraitUrl: "/designer_portrait.png",
@@ -21,70 +21,109 @@ export const portfolioData = {
   
   services: {
     heading: "Freelance Offerings",
-    subheading: "High-impact digital services to elevate your brand and build seamless customer experiences.",
+    subheading: "High-impact design and engineering services custom-built to elevate your online business.",
     items: [
       {
-        id: "ui-ux",
-        title: "UI/UX & Product Design",
-        shortDescription: "Crafting modern, intuitive user interfaces and user experiences focused on visual excellence and clarity.",
-        longDescription: "I design digital products from scratch, covering user research, wireframing, interactive prototyping, and fully-polished visual designs. I focus on creating cohesive visual design systems that seamlessly express your brand and drive actual business results.",
-        icon: "Layers",
-        pricing: "Starts at $2,500 / project",
-        timeline: "2-4 weeks typical delivery",
-        deliverables: ["Figma source files", "Interactive prototypes", "Design system documentation", "Component libraries"]
-      },
-      {
-        id: "frontend-dev",
-        title: "React & Frontend Engineering",
-        shortDescription: "Converting design assets into blazing fast, interactive, and fully responsive frontend applications.",
-        longDescription: "Using React, Vite, and Tailwind CSS, I build modern web applications optimized for speed, SEO, and seamless user interaction. I write highly clean, modular, and maintainable code with professional entry and micro-animations using Framer Motion.",
+        id: "web-dev",
+        title: "Web Development",
+        shortDescription: "Custom, responsive, and search-optimized websites designed with absolute visual excellence and built using modern frameworks like React, Vite, and Tailwind CSS.",
         icon: "Code2",
-        pricing: "Starts at $3,500 / project",
-        timeline: "3-6 weeks typical delivery",
-        deliverables: ["React source code (GitHub)", "Vite build configuration", "Tailwind styling system", "Deployment & domain setup"]
+        deliverables: ["Custom React & Vite builds", "Tailwind CSS styling", "SEO configuration", "Responsive mobile layouts"]
       },
       {
-        id: "framer",
-        title: "Premium Framer Websites",
-        shortDescription: "Designing and developing state-of-the-art interactive marketing sites directly inside Framer.",
-        longDescription: "I create premium, highly animated, and fast-loading promotional and landing websites in Framer. Perfect for startups, creators, and brands that need standard speed-to-market, SEO readiness, and the absolute freedom to edit content directly.",
-        icon: "MonitorPlay",
-        pricing: "Starts at $1,800 / project",
-        timeline: "1-2 weeks typical delivery",
-        deliverables: ["Framer project transfer", "Custom domain setup", "SEO metadata config", "Training & editor guides"]
+        id: "saas-dev",
+        title: "Full SaaS Development",
+        shortDescription: "End-to-end cloud software applications, custom SaaS architectures, multi-tenant databases, API gateways, and scalable backend infrastructure.",
+        icon: "Layers",
+        deliverables: ["FastAPI & Django systems", "PostgreSQL database schemas", "JWT Auth & OAuth2 security", "Dockerized cloud deployments"]
       }
     ]
   },
 
   skills: {
     heading: "Technical Toolbelt",
-    subheading: "A curated selection of languages, frameworks, and creative software I employ to build digital products.",
+    subheading: "A detailed matrix of languages, backend and frontend engineering, databases, cloud DevOps, AI/RAG architectures, and scalability patterns I utilize to build modern server-side and client-side applications.",
     categories: [
       {
-        name: "Design & UX",
+        name: "Languages",
         items: [
-          { name: "Figma & UI Systems", level: 95 },
-          { name: "Visual Identity & Branding", level: 88 },
-          { name: "Wireframing & Prototyping", level: 92 },
-          { name: "Motion & Interaction", level: 85 }
+          { name: "Python", level: 95 },
+          { name: "JavaScript", level: 85 },
+          { name: "C Language", level: 75 },
+          { name: "Java", level: 60 }
         ]
       },
       {
-        name: "Frontend Development",
+        name: "Backend",
         items: [
-          { name: "React.js & Hooks", level: 90 },
-          { name: "Tailwind CSS (v3/v4)", level: 95 },
-          { name: "JavaScript (ES6+)", level: 88 },
-          { name: "Vite & Build Tools", level: 85 }
+          { name: "FastAPI", level: 92 },
+          { name: "Django", level: 95 },
+          { name: "REST APIs & Microservices", level: 90 },
+          { name: "JWT Auth & OAuth2", level: 88 },
+          { name: "WebSockets & Pydantic", level: 86 }
         ]
       },
       {
-        name: "Workflows & Platforms",
+        name: "Frontend",
         items: [
-          { name: "Framer & Webflow", level: 92 },
-          { name: "Git & Version Control", level: 85 },
-          { name: "Next.js Architecture", level: 80 },
-          { name: "SEO & Optimization", level: 88 }
+          { name: "React & Vite", level: 90 },
+          { name: "Tailwind CSS", level: 95 },
+          { name: "HTML5 & CSS3", level: 92 },
+          { name: "Bootstrap", level: 80 }
+        ]
+      },
+      {
+        name: "Databases",
+        items: [
+          { name: "PostgreSQL", level: 90 },
+          { name: "MongoDB", level: 85 },
+          { name: "Firebase Realtime DB", level: 88 },
+          { name: "Schema & Query Optimization", level: 85 }
+        ]
+      },
+      {
+        name: "Auth & Storage",
+        items: [
+          { name: "Firebase Auth", level: 90 },
+          { name: "Firebase Storage", level: 88 },
+          { name: "ImageKit", level: 85 },
+          { name: "Cloudinary", level: 86 }
+        ]
+      },
+      {
+        name: "AI / RAG",
+        items: [
+          { name: "RAG Architecture", level: 92 },
+          { name: "Chroma Vector DB", level: 88 },
+          { name: "Jina Embeddings", level: 85 },
+          { name: "LLM & Prompt Engineering", level: 90 }
+        ]
+      },
+      {
+        name: "DevOps & Infra",
+        items: [
+          { name: "Docker & Linux", level: 88 },
+          { name: "Load Balancers & Caching", level: 80 },
+          { name: "Git Version Control", level: 92 },
+          { name: "CI/CD basics", level: 75 }
+        ]
+      },
+      {
+        name: "Deployment",
+        items: [
+          { name: "Vercel", level: 90 },
+          { name: "Render", level: 88 },
+          { name: "Railway", level: 85 },
+          { name: "Production Deployments", level: 90 }
+        ]
+      },
+      {
+        name: "System Design",
+        items: [
+          { name: "Microservice Separation", level: 85 },
+          { name: "Scalability Patterns", level: 88 },
+          { name: "API Gateway", level: 84 },
+          { name: "Distributed Data Flow", level: 80 }
         ]
       }
     ]
@@ -92,16 +131,50 @@ export const portfolioData = {
 
   projects: {
     heading: "Selected Works",
-    subheading: "Explore my latest case studies highlighting product design, AI solutions, and visual aesthetics.",
+    subheading: "Explore my latest case studies highlighting SaaS architecture, design work, open source, and hackathons.",
+    bentoCategories: [
+      {
+        id: 1,
+        title: "SaaS Projects",
+        tag: "Full Stack & AI",
+        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        link: "/projects/saas",
+        gridSpan: "md:col-span-7",
+      },
+      {
+        id: 2,
+        title: "Design Works",
+        tag: "UI / UX Design",
+        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        link: "/projects/design",
+        gridSpan: "md:col-span-5",
+      },
+      {
+        id: 3,
+        title: "Project Contributions",
+        tag: "Open Source",
+        imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+        link: "/projects/contributions",
+        gridSpan: "md:col-span-5",
+      },
+      {
+        id: 4,
+        title: "Hackathon Projects",
+        tag: "Rapid Prototyping",
+        imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=800",
+        link: "/projects/hackathon",
+        gridSpan: "md:col-span-7",
+      },
+    ],
     items: [
       {
         id: "rag",
         title: "RAG - AI Engine Workspace",
-        category: "AI Integration & Product Design",
+        category: "saas",
         shortDescription: "A sophisticated AI workspace dashboard optimizing document search using Retrieval-Augmented Generation.",
         longDescription: "RAG is an enterprise-grade AI interface built to index, digest, and query massive corporate internal document stores. The project focuses on creating a seamless user experience for querying complex knowledge graphs, offering citation tracking, source highlightings, and clean, beautiful response structures.",
         techStack: ["React.js", "Tailwind CSS", "Framer Motion", "Vector Embeddings", "FastAPI"],
-        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800", // ImageKit placeholder path
+        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
         role: "Lead UI Designer & Frontend Engineer",
         timeline: "8 weeks",
         challenges: [
@@ -118,27 +191,106 @@ export const portfolioData = {
         githubLink: "https://github.com/carter/rag-ai-workspace"
       },
       {
-        id: "kush-portfolio",
-        title: "Kush Portfolio",
-        category: "Creative Web Design",
-        shortDescription: "A fully immersive, premium interactive portfolio for standard architectural design studios.",
-        longDescription: "The Kush Portfolio is a high-end personal showcase site designed for Kush Architects. The design highlights editorial layouts, minimalist visual structures, dynamic typography, and full-screen image transitions. Built using modern interaction methods, it provides a gallery-like experience for physical art and design structures.",
-        techStack: ["Next.js", "Tailwind CSS v4", "Framer Motion", "Lenis Smooth Scroll", "Sanity CMS"],
-        imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800", // ImageKit placeholder path
-        role: "Creative Director & Solo Developer",
-        timeline: "4 weeks",
+        id: "billing-gateway",
+        title: "SaaS Billing Gateway",
+        category: "saas",
+        shortDescription: "High-performance Stripe subscription webhook broker and customer billing analytical dashboard.",
+        longDescription: "An enterprise-grade SaaS billing dashboard and event processing broker integrated with Stripe and PostgreSQL. Capable of processing hundreds of transactional webhook events per second, delivering clean user interfaces for sub management, subscription tier toggles, and analytical charts.",
+        techStack: ["Python", "FastAPI", "Stripe API", "PostgreSQL", "Redis", "Recharts"],
+        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        role: "Backend Architect & Systems Engineer",
+        timeline: "6 weeks",
         challenges: [
-          "Maintaining fast load times with ultra-high resolution photography portfolios.",
-          "Implementing custom page transitions that mimic physically flipping architectural design catalogs.",
-          "Ensuring pixel-perfect responsive alignments for asymmetrical grid structures."
+          "Handling Stripe webhooks concurrently under high volume without double-billing.",
+          "Ensuring absolute data consistency across relational billing ledger tables.",
+          "Optimizing database query latencies for user analytical panels."
         ],
         outcomes: [
-          "Implemented lazy loading and next-gen ImageKit compression reducing load time by 60%.",
-          "Crafted customized Framer Motion page flip animations operating at a locked 60fps.",
-          "Featured on several CSS gallery and design inspiration showcase websites."
+          "99.99% webhook delivery success rate using Redis queuing brokers.",
+          "Transactional database ledgers preventing race conditions during checkout.",
+          "Analytical dashboards rendering in under 120ms for large dataset profiles."
         ],
-        liveLink: "https://kush.carter.design",
-        githubLink: "https://github.com/carter/kush-portfolio-minimal"
+        liveLink: "https://billing.carter.design",
+        githubLink: "https://github.com/carter/stripe-saas-billing"
+      },
+      {
+        id: "api-gateway",
+        title: "Multi-tenant API Gateway",
+        category: "saas",
+        shortDescription: "A custom high-performance API gateway with rate-limiting, secure JWT authentication, and routing.",
+        longDescription: "A central entry-point gateway engineered to proxy internal microservice requests. Offers built-in JWT authorization, dynamic route mapping, and token-bucket algorithm rate-limiting, drastically simplifying access management for client-side applications.",
+        techStack: ["Go", "Redis", "JWT Auth", "Docker", "Prometheus", "Grafana"],
+        imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+        role: "Solo Developer",
+        timeline: "5 weeks",
+        challenges: [
+          "Maintaining proxy response latency overhead strictly under 5 milliseconds.",
+          "Implementing dynamic route resolution without restarts.",
+          "Constructing robust unit tests for authentication filters."
+        ],
+        outcomes: [
+          "Achieved average latency overhead of 3.2ms.",
+          "Integrated Redis token-bucket rate limiting serving 10,000+ operations/min.",
+          "Automated dynamic route syncing from consul configuration registries."
+        ],
+        liveLink: "https://gateway.carter.design",
+        githubLink: "https://github.com/carter/api-gateway"
+      },
+      {
+        id: "kush-portfolio",
+        title: "Kush Portfolio",
+        category: "design",
+        shortDescription: "A fully immersive, premium interactive portfolio for standard architectural design studios.",
+        imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://kush.carter.design"
+      },
+      {
+        id: "nova-ui",
+        title: "Nova Glass UI Kit",
+        category: "design",
+        shortDescription: "A premium glassmorphic UI library for dark-themed dashboards and agency landing pages.",
+        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://nova.carter.design"
+      },
+      {
+        id: "solaria",
+        title: "Solaria Mobile Mockups",
+        category: "design",
+        shortDescription: "High-fidelity solar panel energy monitoring mobile app interfaces designed in Figma.",
+        imageUrl: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800",
+        liveLink: "" // No live link - will show nothing!
+      },
+      {
+        id: "fastapi-rate-limiter",
+        title: "FastAPI Sliding Window Limiter",
+        category: "contributions",
+        shortDescription: "Contributed an asynchronous sliding-window rate limiting dependency plugin to the FastAPI package ecosytem.",
+        imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://github.com/fastapi/fastapi"
+      },
+      {
+        id: "tailwind-grid-helper",
+        title: "Tailwind CSS Grid Helper",
+        category: "contributions",
+        shortDescription: "Proposed and pushed an optimization for fractional grid layout calculations in Tailwind CSS grid modules.",
+        imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
+        liveLink: "" // No live link - will show nothing!
+      },
+      {
+        id: "ecoscan",
+        title: "EcoScan - AI Trash Classifier",
+        category: "hackathon",
+        shortDescription: "Won 1st place in GreenTech Hackathon. Built a computer vision recycling item classifier on the edge.",
+        imageUrl: "https://images.unsplash.com/photo-1532996127610-5975b803a620?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://ecoscan.devpost.com"
+      },
+      {
+        id: "docuquery",
+        title: "DocuQuery - RAG Web Extension",
+        category: "hackathon",
+        shortDescription: "Engineered a local browser extension to dynamically query and summarize PDF content using chroma embeddings.",
+        imageUrl: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800",
+        liveLink: "" // No live link - will show nothing!
       }
     ]
   },
@@ -176,15 +328,15 @@ export const portfolioData = {
     description: "I am currently accepting freelance design and engineering contracts for late Q2 2026. Drop a message to discuss your objectives, timeline, and budget.",
     cta: {
       text: "Get In Touch",
-      email: "hello@carter.design",
-      phone: "+1 (555) 019-2834",
-      location: "San Francisco, CA (GMT-8)",
+      email: "sujoygarai89@gmail.com",
+      phone: "+91 6294178990",
+      location: "Durgapur, West Bengal, India",
     },
     socials: [
-      { name: "LinkedIn", url: "https://linkedin.com/in/carter-designer" },
-      { name: "GitHub", url: "https://github.com/carter-dev" },
-      { name: "Twitter", url: "https://twitter.com/carter_creates" },
-      { name: "Dribbble", url: "https://dribbble.com/carter_design" }
+      { name: "LinkedIn", url: "https://www.linkedin.com/in/sujoygarai/" },
+      { name: "GitHub", url: "https://github.com/Sujoy0001" },
+      { name: "Instagram", url: "https://www.instagram.com/_sujoygarai_?igsh=Nmx0YjVwZXV6M3Bv" },
+      { name: "Portfolio", url: "https://sujoygarai.in" }
     ]
   }
 };

@@ -1,37 +1,143 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Compass, Settings, Zap } from 'lucide-react';
-import { portfolioData } from '../constants/portfolioData';
+import { 
+  Code2, 
+  Cpu, 
+  Layout, 
+  Database, 
+  KeyRound, 
+  BrainCircuit, 
+  Settings, 
+  Globe, 
+  GitFork,
+  Cloud,
+  Image,
+  Bot,
+  Server,
+  Binary
+} from 'lucide-react';
+import 'devicon/devicon.min.css';
 
-const iconMap = [
-  ShieldCheck,
-  Compass,
-  Settings,
-  Zap
+const skillCategories = [
+  {
+    name: "Languages",
+    icon: Code2,
+    items: [
+      { name: "Python (Advanced)", icon: "devicon-python-plain colored" },
+      { name: "JavaScript (Intermediate)", icon: "devicon-javascript-plain colored" },
+      { name: "C (Intermediate)", icon: "devicon-c-plain colored" },
+      { name: "Java (Basic)", icon: "devicon-java-plain colored" }
+    ]
+  },
+  {
+    name: "Backend Engineering",
+    icon: Cpu,
+    items: [
+      { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
+      { name: "Django", icon: "devicon-django-plain colored" },
+      { name: "REST APIs", icon: "devicon-nodejs-plain colored" },
+      { name: "Microservices", icon: "devicon-kubernetes-plain colored" },
+      { name: "JWT Auth", icon: "devicon-oauth-plain colored" },
+      { name: "OAuth2", icon: "devicon-oauth-plain colored" },
+      { name: "WebSockets", icon: "devicon-socketio-original colored" },
+      { name: "Pydantic", icon: "devicon-python-plain colored" }
+    ]
+  },
+  {
+    name: "Frontend Engineering",
+    icon: Layout,
+    items: [
+      { name: "React", icon: "devicon-react-original colored" },
+      { name: "Vite", icon: "devicon-vite-plain colored" },
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
+      { name: "HTML5", icon: "devicon-html5-plain colored" },
+      { name: "CSS3", icon: "devicon-css3-plain colored" },
+      { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" }
+    ]
+  },
+  {
+    name: "Databases",
+    icon: Database,
+    items: [
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+      { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+      { name: "Firebase Realtime DB", icon: "devicon-firebase-plain colored" },
+      { name: "Schema & Indexing", icon: "devicon-sqlite-plain colored" }
+    ]
+  },
+  {
+    name: "Auth & Storage",
+    icon: KeyRound,
+    items: [
+      { name: "Firebase Auth", icon: "devicon-firebase-plain colored" },
+      { name: "Firebase Storage", icon: "devicon-firebase-plain colored" },
+      { name: "ImageKit", icon: Image },
+      { name: "Cloudinary", icon: Cloud }
+    ]
+  },
+  {
+    name: "AI & RAG Architectures",
+    icon: BrainCircuit,
+    items: [
+      { name: "RAG Architecture", icon: "devicon-jupyter-plain colored" },
+      { name: "Chroma Vector DB", icon: "devicon-sqlite-plain colored" },
+      { name: "Jina Embeddings", icon: Binary },
+      { name: "LLM & Prompt Eng.", icon: Bot }
+    ]
+  },
+  {
+    name: "DevOps & Infrastructure",
+    icon: Settings,
+    items: [
+      { name: "Docker", icon: "devicon-docker-plain colored" },
+      { name: "Linux", icon: "devicon-linux-plain colored" },
+      { name: "Git Version Control", icon: "devicon-git-plain colored" },
+      { name: "Load Balancers", icon: "devicon-redis-plain colored" },
+      { name: "CI/CD basics", icon: "devicon-githubactions-plain colored" }
+    ]
+  },
+  {
+    name: "Cloud Deployment",
+    icon: Globe,
+    items: [
+      { name: "Vercel", icon: "devicon-vercel-original" },
+      { name: "Render", icon: Cloud },
+      { name: "Railway", icon: "devicon-heroku-original colored" },
+      { name: "Prod Deployments", icon: Server }
+    ]
+  },
+  {
+    name: "System Design",
+    icon: GitFork,
+    items: [
+      { name: "Microservice Sep.", icon: "devicon-kubernetes-plain colored" },
+      { name: "Scalability Patterns", icon: "devicon-nginx-original colored" },
+      { name: "API Gateway", icon: "devicon-nginx-original colored" },
+      { name: "Distributed Data Flow", icon: "devicon-apache-plain colored" }
+    ]
+  }
 ];
 
 export default function SkillsPage() {
-  const { skills } = portfolioData;
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.1 }
+      transition: { staggerChildren: 0.05 }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 35 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'spring', stiffness: 80, damping: 18 }
+      transition: { type: 'spring', stiffness: 100, damping: 20 }
     }
   };
 
   return (
-    <div className="w-full pt-32 pb-24 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 bg-white text-neutral-900 text-left">
+    <div className="w-full pt-32 pb-24 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 bg-[#f5f5f3] dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 text-center min-h-screen transition-colors duration-300">
       <div className="w-full max-w-[1440px] mx-auto">
         
         {/* Title Section */}
@@ -39,63 +145,66 @@ export default function SkillsPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl space-y-4 mb-20"
+          className="max-w-3xl mx-auto text-center space-y-4 mb-20"
         >
-          <h1 className="text-xs font-bold text-neutral-400 tracking-widest uppercase">Expertise</h1>
-          <h2 className="text-4xl sm:text-5xl font-black text-neutral-900 tracking-tight leading-none">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 px-4 py-1.5 text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">
+            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+            Skills & Expertise
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-black text-zinc-950 dark:text-white tracking-tight leading-none">
             Technical Proficiency Matrix
-          </h2>
-          <p className="text-neutral-500 text-base sm:text-lg leading-relaxed pt-2">
-            {skills.subheading}
+          </h1>
+          <p className="text-zinc-500 dark:text-zinc-400 text-base sm:text-lg leading-relaxed pt-2 font-medium">
+            A comprehensive directory of my backend systems, database schemas, frontend interfaces, deployment engines, and DevOps architectures.
           </p>
         </motion.div>
 
-        {/* Detailed Grid Map of Categories */}
+        {/* Categories rendering */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="space-y-16"
         >
-          {skills.categories.map((category, index) => {
-            const CategoryIcon = iconMap[index % iconMap.length];
+          {skillCategories.map((category) => {
+            const CategoryIcon = category.icon;
             return (
-              <motion.div
-                key={category.name}
-                variants={itemVariants}
-                className="bg-neutral-50 border border-neutral-100 rounded-[32px] p-8 space-y-8 flex flex-col justify-start shadow-sm hover:border-neutral-200/40 transition-all duration-300"
-              >
-                {/* Header */}
-                <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-neutral-950 text-white shadow-sm">
-                    <CategoryIcon className="w-5 h-5" />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-extrabold text-neutral-900">{category.name}</h3>
+              <div key={category.name} className="w-full">
+                
+                {/* Category Header */}
+                <div className="flex items-center justify-center gap-3 border-zinc-200 dark:border-zinc-800 pb-4 mb-8 text-center">
+                  <CategoryIcon className="w-6 h-6 text-zinc-950 dark:text-white" />
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-950 dark:text-white tracking-tight">
+                    {category.name}
+                  </h2>
                 </div>
 
-                {/* Progress bars list */}
-                <div className="space-y-6 flex-grow">
+                {/* Skills Grid */}
+                <div className="flex flex-wrap gap-6 justify-center">
                   {category.items.map((skill) => (
-                    <div key={skill.name} className="space-y-2">
-                      <div className="flex justify-between items-center text-sm font-semibold text-neutral-800">
-                        <span>{skill.name}</span>
-                        <span className="text-xs text-neutral-400 font-bold">{skill.level}%</span>
+                    <motion.div
+                      key={skill.name}
+                      variants={itemVariants}
+                      className="group rounded-2xl p-3 flex flex-row items-center gap-4 text-left transition-all duration-300 hover:-translate-y-1 bg-white/50 dark:bg-zinc-900/40 border border-zinc-200/30 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 shadow-2xs cursor-default"
+                    >
+                      {/* Icon Container (No Border, Left Side) */}
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white dark:bg-zinc-800 shadow-xs group-hover:scale-105 transition-transform duration-300">
+                        {typeof skill.icon === 'string' ? (
+                          <i className={`${skill.icon} text-2xl`} />
+                        ) : (
+                          <skill.icon className="w-6 h-6 text-zinc-950 dark:text-zinc-200" />
+                        )}
                       </div>
                       
-                      {/* Bar Container */}
-                      <div className="w-full h-2.5 bg-neutral-200 rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1.4, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                          className="h-full bg-neutral-950 rounded-full"
-                        />
-                      </div>
-                    </div>
+                      {/* Skill Name */}
+                      <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-200 leading-tight group-hover:text-green-600 dark:group-hover:text-green-500 transition-colors duration-300">
+                        {skill.name}
+                      </h3>
+                    </motion.div>
                   ))}
                 </div>
 
-              </motion.div>
+              </div>
             );
           })}
         </motion.div>

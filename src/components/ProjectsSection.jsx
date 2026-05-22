@@ -96,7 +96,7 @@ export default function ProjectsSection() {
               {/* Case Study Navigation Button */}
               <div className="mt-8 pt-6 border-t border-neutral-100 flex justify-end">
                 <Link 
-                  to={`/projects/${project.id}`} 
+                  to={`/project/${project.id}`} 
                   className="group inline-flex items-center gap-2.5 bg-neutral-950 hover:bg-neutral-900 text-white font-semibold text-xs px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-neutral-800"
                 >
                   <span>View Full Case Study</span>

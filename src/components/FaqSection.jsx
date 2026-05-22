@@ -30,16 +30,19 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="faq" className="w-full py-20 lg:py-28 bg-white px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
+    <section id="faq" className="w-full py-20 lg:py-28 bg-[#f5f5f3] dark:bg-zinc-950 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24 transition-colors duration-300">
       <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center">
         
         {/* Header Block */}
         <div className="max-w-3xl text-center space-y-4 mb-16">
-          <h2 className="text-xs font-bold text-neutral-400 tracking-widest uppercase">{faq.heading}</h2>
-          <h3 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 px-4 py-1.5 text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">
+            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+            {faq.heading}
+          </div>
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-zinc-950 dark:text-white tracking-tight leading-tight">
             Frequently Asked Questions
           </h3>
-          <p className="text-neutral-500 text-sm sm:text-base leading-relaxed">
+          <p className="text-zinc-500 dark:text-zinc-400 text-sm sm:text-base leading-relaxed">
             {faq.subheading}
           </p>
         </div>
@@ -60,8 +63,8 @@ export default function FaqSection() {
                 variants={itemVariants}
                 className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                   isOpen 
-                    ? 'border-neutral-950/80 bg-neutral-50/50 shadow-sm' 
-                    : 'border-neutral-200 hover:border-neutral-900 bg-white'
+                    ? 'border-zinc-950/80 dark:border-zinc-700 bg-white dark:bg-zinc-900/60 shadow-sm' 
+                    : 'border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-900 dark:hover:border-zinc-700 bg-white/70 dark:bg-zinc-900/20'
                 }`}
               >
                 {/* FAQ Header (Trigger button) */}
@@ -72,14 +75,14 @@ export default function FaqSection() {
                 >
                   <div className="flex items-center gap-3">
                     <HelpCircle className={`w-5 h-5 flex-shrink-0 transition-colors ${
-                      isOpen ? 'text-neutral-900' : 'text-neutral-400'
+                      isOpen ? 'text-zinc-950 dark:text-white' : 'text-zinc-400 dark:text-zinc-500'
                     }`} />
-                    <span className="text-sm sm:text-base font-bold text-neutral-900">{item.question}</span>
+                    <span className="text-sm sm:text-base font-bold text-zinc-950 dark:text-white">{item.question}</span>
                   </div>
                   <div className={`flex items-center justify-center w-8 h-8 rounded-full border transition-all duration-300 ${
                     isOpen 
-                      ? 'border-neutral-900 bg-neutral-900 text-white rotate-180' 
-                      : 'border-neutral-200 text-neutral-500 hover:bg-neutral-50'
+                      ? 'border-zinc-950 bg-zinc-950 dark:border-white dark:bg-white text-white dark:text-zinc-950 rotate-180' 
+                      : 'border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                   }`}>
                     {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}
                   </div>
@@ -94,7 +97,7 @@ export default function FaqSection() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                     >
-                      <div className="px-6 pb-6 pl-14 text-neutral-500 text-sm sm:text-base leading-relaxed border-t border-neutral-100/60 pt-4 text-left">
+                      <div className="px-6 pb-6 pl-14 text-zinc-500 dark:text-zinc-400 text-sm sm:text-base leading-relaxed border-t border-zinc-200/60 dark:border-zinc-800 pt-4 text-left">
                         {item.answer}
                       </div>
                     </motion.div>
@@ -108,10 +111,10 @@ export default function FaqSection() {
         {/* View FAQ Page CTA */}
         <div className="mt-16 text-center">
           <Link
-            to="/faq"
-            className="inline-flex items-center gap-2.5 bg-neutral-950 hover:bg-neutral-900 text-white font-semibold text-xs px-7 py-3.5 rounded-full shadow-md transition-all hover:scale-[1.02] duration-300"
+            to="/contact"
+            className="inline-flex items-center gap-2.5 bg-zinc-950 dark:bg-white hover:bg-zinc-900 dark:hover:bg-zinc-100 text-white dark:text-zinc-950 font-semibold text-xs px-7 py-3.5 rounded-full shadow-md transition-all hover:scale-[1.02] duration-300 cursor-pointer"
           >
-            <span>View All FAQs</span>
+            <span>Have more questions? Contact Me</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

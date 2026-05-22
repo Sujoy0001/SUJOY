@@ -39,6 +39,14 @@ export default function Navbar() {
 
   const toggleTheme = () => setIsDark(!isDark);
 
+  const handleLogoClick = (e) => {
+    setIsOpen(false);
+    if (window.location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const navLinks = [
     { name: 'About', path: '/about' },
     { name: 'Skills', path: '/skills' },
@@ -58,7 +66,7 @@ export default function Navbar() {
             ? 'border-zinc-300 dark:border-zinc-800 shadow-[0_12px_30px_rgba(0,0,0,0.08)]' 
             : 'border-zinc-200/80 dark:border-zinc-800/80 shadow-[0_8px_20px_rgba(0,0,0,0.02)]'
         }`}>
-          <Link to="/" className="text-xl font-black tracking-tight text-zinc-950 dark:text-white hover:opacity-85 transition-opacity">
+          <Link to="/" onClick={handleLogoClick} className="text-xl font-black tracking-tight text-zinc-950 dark:text-white hover:opacity-85 transition-opacity">
             meow<span className="text-green-500">.</span>
           </Link>
 

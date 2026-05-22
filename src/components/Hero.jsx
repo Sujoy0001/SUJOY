@@ -24,24 +24,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-[#f5f5f3]/20 via-[#f5f5f3]/0 to-[#f5f5f3] dark:from-zinc-950/20 dark:via-zinc-950/0 dark:to-zinc-950 transition-colors duration-300" />
       </div>
 
-      {/* TABLET & MOBILE VIEW PORTRAIT CARD (HIDDEN ON DESKTOP) */}
-      <div className="md:hidden flex flex-col items-center justify-center pt-28 px-6 w-full max-w-sm mx-auto">
-        <div className={`relative group w-full aspect-[4/5] rounded-[32px] overflow-hidden bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-900 shadow-xs p-3 transition-all duration-750 ease-out ${
-          visible ? "translate-y-0 opacity-100 scale-100" : "translate-y-8 opacity-0 scale-95"
-        }`}>
-          <div className="w-full h-full rounded-[24px] overflow-hidden relative bg-zinc-100 dark:bg-zinc-950">
-            <img 
-              src={myImage} 
-              alt="Sujoy" 
-              className="w-full h-full object-cover object-center" 
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/20 via-transparent to-transparent pointer-events-none" />
-          </div>
-        </div>
-      </div>
-
       {/* ORIGINAL RESPONSIVE CONTENT SHELL */}
-      <div className="relative z-10 flex min-h-screen md:items-end flex-col justify-end px-14 py-16 max-md:px-6">
+      <div className="relative z-10 flex min-h-screen md:items-end flex-col justify-end px-14 py-16 max-md:px-6 max-md:pt-28 max-md:pb-12 max-md:justify-start">
         <div className="grid w-full grid-cols-2 items-end gap-20 max-md:grid-cols-1 max-md:gap-10">
           
           {/* Left Block - Headline */}
@@ -89,6 +73,19 @@ export default function Hero() {
             </Link>
           </div>
 
+        </div>
+
+        {/* MOBILE & TABLET IMAGE AT THE VERY BOTTOM OF THE HERO FLOW */}
+        <div className="md:hidden w-full flex justify-center mt-12 max-md:mt-8">
+          <div className={`w-full max-w-sm aspect-[4/5] overflow-hidden transition-all duration-750 ease-out ${
+            visible ? "translate-y-0 opacity-100 scale-100" : "translate-y-8 opacity-0 scale-95"
+          }`}>
+            <img 
+              src={myImage} 
+              alt="Sujoy" 
+              className="w-full h-full object-cover object-center rounded-[24px]" 
+            />
+          </div>
         </div>
       </div>
 

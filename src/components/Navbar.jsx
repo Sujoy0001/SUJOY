@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Download, ArrowUpRight, Sun, Moon } from 'lucide-react';
+import resume from '../assets/Sujoy_Garai_Backend_Resume.pdf';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,7 @@ export default function Navbar() {
 
           {/* Download Button (Icon + Text, Black BG) */}
           <a 
-            href="/resume.pdf" 
+            href={resume} 
             download="Sujoy_Resume.pdf"
             className="flex items-center gap-2 rounded-full bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 px-4 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-all duration-300 group"
             title="Download Resume"

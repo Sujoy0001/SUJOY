@@ -82,7 +82,7 @@ export const aboutData = {
   // =========================================
   personalInfo: {
     name: "Sujoy Garai",
-    role: "Full Stack Django Developer",
+    role: "Full Stack Python Developer",
     tagline:
       "Building scalable full-stack web applications with clean UI and powerful backend systems.",
     description:

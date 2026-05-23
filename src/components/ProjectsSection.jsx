@@ -26,7 +26,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="w-full py-20 lg:py-28 bg-neutral-50 px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
-      <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center">
+      <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Header Block */}
         <div className="max-w-3xl text-center space-y-4 mb-16">

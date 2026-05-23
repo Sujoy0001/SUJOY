@@ -3,22 +3,18 @@
  * All copy and image links for the entire multi-page application are loaded from here.
  * You can replace the local portraitUrl or project imagePaths with your own ImageKit URLs.
  */
+
+import codeimg from "../assets/saas1.png";
+
+
+import rag from "../assets/pro/rag.png";
+import tca from "../assets/pro/tca.png";
+
+import img1 from "../assets/pro/kush.jpeg";
+import img2 from "../assets/pro/dockra.png";
+import img3 from "../assets/pro/kristi.png";
+
 export const portfolioData = {
-  hero: {
-    badge: {
-      text: "2 projects left in March",
-      status: "active",
-    },
-    title: "Carter is solving problems through strategic design and compelling visuals",
-    description: "As a digital product designer with a strong focus on visual design and Framer websites, he collaborates closely with teams to craft seamless, user-centered, and reliable partner in bringing ideas to life.",
-    cta: {
-      text: "Email Me",
-      email: "sujoygarai89@gmail.com",
-      subject: "Project Inquiry",
-    },
-    portraitUrl: "/designer_portrait.png",
-  },
-  
   services: {
     heading: "Freelance Offerings",
     subheading: "High-impact design and engineering services custom-built to elevate your online business.",
@@ -40,95 +36,6 @@ export const portfolioData = {
     ]
   },
 
-  skills: {
-    heading: "Technical Toolbelt",
-    subheading: "A detailed matrix of languages, backend and frontend engineering, databases, cloud DevOps, AI/RAG architectures, and scalability patterns I utilize to build modern server-side and client-side applications.",
-    categories: [
-      {
-        name: "Languages",
-        items: [
-          { name: "Python", level: 95 },
-          { name: "JavaScript", level: 85 },
-          { name: "C Language", level: 75 },
-          { name: "Java", level: 60 }
-        ]
-      },
-      {
-        name: "Backend",
-        items: [
-          { name: "FastAPI", level: 92 },
-          { name: "Django", level: 95 },
-          { name: "REST APIs & Microservices", level: 90 },
-          { name: "JWT Auth & OAuth2", level: 88 },
-          { name: "WebSockets & Pydantic", level: 86 }
-        ]
-      },
-      {
-        name: "Frontend",
-        items: [
-          { name: "React & Vite", level: 90 },
-          { name: "Tailwind CSS", level: 95 },
-          { name: "HTML5 & CSS3", level: 92 },
-          { name: "Bootstrap", level: 80 }
-        ]
-      },
-      {
-        name: "Databases",
-        items: [
-          { name: "PostgreSQL", level: 90 },
-          { name: "MongoDB", level: 85 },
-          { name: "Firebase Realtime DB", level: 88 },
-          { name: "Schema & Query Optimization", level: 85 }
-        ]
-      },
-      {
-        name: "Auth & Storage",
-        items: [
-          { name: "Firebase Auth", level: 90 },
-          { name: "Firebase Storage", level: 88 },
-          { name: "ImageKit", level: 85 },
-          { name: "Cloudinary", level: 86 }
-        ]
-      },
-      {
-        name: "AI / RAG",
-        items: [
-          { name: "RAG Architecture", level: 92 },
-          { name: "Chroma Vector DB", level: 88 },
-          { name: "Jina Embeddings", level: 85 },
-          { name: "LLM & Prompt Engineering", level: 90 }
-        ]
-      },
-      {
-        name: "DevOps & Infra",
-        items: [
-          { name: "Docker & Linux", level: 88 },
-          { name: "Load Balancers & Caching", level: 80 },
-          { name: "Git Version Control", level: 92 },
-          { name: "CI/CD basics", level: 75 }
-        ]
-      },
-      {
-        name: "Deployment",
-        items: [
-          { name: "Vercel", level: 90 },
-          { name: "Render", level: 88 },
-          { name: "Railway", level: 85 },
-          { name: "Production Deployments", level: 90 }
-        ]
-      },
-      {
-        name: "System Design",
-        items: [
-          { name: "Microservice Separation", level: 85 },
-          { name: "Scalability Patterns", level: 88 },
-          { name: "API Gateway", level: 84 },
-          { name: "Distributed Data Flow", level: 80 }
-        ]
-      }
-    ]
-  },
-
   projects: {
     heading: "Selected Works",
     subheading: "Explore my latest case studies highlighting SaaS architecture, design work, open source, and hackathons.",
@@ -137,7 +44,7 @@ export const portfolioData = {
         id: 1,
         title: "SaaS Projects",
         tag: "Full Stack & AI",
-        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+        imageUrl: codeimg,
         link: "/projects/saas",
         gridSpan: "md:col-span-7",
       },
@@ -169,128 +76,147 @@ export const portfolioData = {
     items: [
       {
         id: "rag",
-        title: "RAG - AI Engine Workspace",
+        title: "RAGENGINE - AI Workspace Dashboard",
         category: "saas",
-        shortDescription: "A sophisticated AI workspace dashboard optimizing document search using Retrieval-Augmented Generation.",
-        longDescription: "RAG is an enterprise-grade AI interface built to index, digest, and query massive corporate internal document stores. The project focuses on creating a seamless user experience for querying complex knowledge graphs, offering citation tracking, source highlightings, and clean, beautiful response structures.",
-        techStack: ["React.js", "Tailwind CSS", "Framer Motion", "Vector Embeddings", "FastAPI"],
-        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-        role: "Lead UI Designer & Frontend Engineer",
-        timeline: "8 weeks",
-        challenges: [
-          "Presenting multi-layered AI response citations without cluttering the chat view.",
-          "Ensuring instant response streaming with smooth markdown rendering and syntax highlighting.",
-          "Designing complex data visualization layouts for document ingestion pipelines."
+        shortDescription: "A sophisticated RAG-powered AI platform designed to optimize intelligent document search, contextual retrieval, and accurate AI-generated responses from custom knowledge bases.",
+        longDescription: "RAGEngine is an enterprise-grade AI platform built to index, process, and query massive internal document repositories using Retrieval-Augmented Generation (RAG). The platform delivers fast, context-aware answers with citation tracking, source highlighting, and clean response structures, creating a seamless experience for navigating complex organizational knowledge bases.",
+        techStack: [
+          "Python",
+          "FastAPI",
+          "React.js",
+          "MongoDB",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Docker",
+          "Jina AI Embeddings",
+          "ChromaDB",
+          "Vector Search",
+          "Retrieval-Augmented Generation (RAG)",
+          "REST API",
+          "AI Document Search",
+          "Semantic Search",
+          "LLM Integration",
+          "JSON",
+          "Git",
+          "GitHub"
         ],
-        outcomes: [
-          "Developed an elegant citation preview card system reducing query navigation by 40%.",
-          "Engineered a fully customized markdown renderer using Tailwind styling system.",
-          "Successfully deployed to production catering to 5,000+ active enterprise queries daily."
-        ],
-        liveLink: "https://rag.carter.design",
-        githubLink: "https://github.com/carter/rag-ai-workspace"
-      },
-      {
-        id: "billing-gateway",
-        title: "SaaS Billing Gateway",
-        category: "saas",
-        shortDescription: "High-performance Stripe subscription webhook broker and customer billing analytical dashboard.",
-        longDescription: "An enterprise-grade SaaS billing dashboard and event processing broker integrated with Stripe and PostgreSQL. Capable of processing hundreds of transactional webhook events per second, delivering clean user interfaces for sub management, subscription tier toggles, and analytical charts.",
-        techStack: ["Python", "FastAPI", "Stripe API", "PostgreSQL", "Redis", "Recharts"],
-        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-        role: "Backend Architect & Systems Engineer",
+        imageUrl: rag,
+        role : "Full-Stack AI Engineer & Frontend Developer",
         timeline: "6 weeks",
         challenges: [
-          "Handling Stripe webhooks concurrently under high volume without double-billing.",
-          "Ensuring absolute data consistency across relational billing ledger tables.",
-          "Optimizing database query latencies for user analytical panels."
+          "Building scalable semantic document retrieval for large AI knowledge bases.",
+          "Optimizing vector search performance and embedding accuracy for fast AI responses.",
+          "Designing a clean AI chat interface with source citations and markdown rendering."
         ],
         outcomes: [
-          "99.99% webhook delivery success rate using Redis queuing brokers.",
-          "Transactional database ledgers preventing race conditions during checkout.",
-          "Analytical dashboards rendering in under 120ms for large dataset profiles."
+          "Implemented a high-performance RAG pipeline using Jina Embeddings and ChromaDB.",
+          "Developed a responsive AI interface with real-time response streaming and syntax highlighting.",
+          "Successfully deployed a scalable AI document search platform with optimized retrieval accuracy."
         ],
-        liveLink: "https://billing.carter.design",
-        githubLink: "https://github.com/carter/stripe-saas-billing"
+        liveLink: "https://ragenginev1.vercel.app/",
+        githubLink: "https://github.com/Sujoy0001/NootBookLM"
+      },
+     {
+        id: "problem-solver",
+        title: "AI Problem Solver Platform",
+        category: "saas",
+        shortDescription: "A collaborative AI-powered platform for coding discussions, solution sharing, and developer learning.",
+        longDescription: "A full-stack problem-solving platform built for developers and students to post problems, share solutions, discuss approaches, and interact through an AI-powered assistant. The system supports threaded discussions, voting, accepted answers, file uploads, and AI-based code explanations with multi-language conversion support.",
+        techStack: ["Python", "Django", "SQLite", "JavaScript", "Tailwind CSS", "AI Integration"],
+        imageUrl: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=800",
+        role: "Full-Stack Developer",
+        timeline: "8 weeks",
+        challenges: [
+          "Designing scalable discussion and solution management architecture.",
+          "Implementing AI-powered code explanation and language conversion features.",
+          "Handling dynamic markdown rendering and file attachment management."
+        ],
+        outcomes: [
+          "Built a collaborative platform supporting problem discussions and accepted solutions.",
+          "Integrated AI-powered assistant for explaining and converting source code.",
+          "Created a responsive and clean developer-focused user experience."
+        ],
+        liveLink: "https://www.sujoygarai.in",
+        githubLink: "https://github.com/Sujoy0001/problemsolver"
       },
       {
-        id: "api-gateway",
-        title: "Multi-tenant API Gateway",
+        id: "teacher-course-allotment",
+        title: "Teacher Course Allotment System",
         category: "saas",
-        shortDescription: "A custom high-performance API gateway with rate-limiting, secure JWT authentication, and routing.",
-        longDescription: "A central entry-point gateway engineered to proxy internal microservice requests. Offers built-in JWT authorization, dynamic route mapping, and token-bucket algorithm rate-limiting, drastically simplifying access management for client-side applications.",
-        techStack: ["Go", "Redis", "JWT Auth", "Docker", "Prometheus", "Grafana"],
-        imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
-        role: "Solo Developer",
+        shortDescription: "A smart academic management platform for efficient teacher and subject allocation.",
+        longDescription: "A web-based course allotment management platform developed to streamline teacher-course assignments for educational institutions. The system manages faculty data, subject allocation, workload balancing, and department-wise scheduling through an intuitive administrative dashboard.",
+        techStack: ["Python", "FastAPI", "MongoDB", "HTML", "CSS", "JavaScript", "Bootstrap"],
+        imageUrl: tca,
+        role: "Backend Developer & System Designer",
         timeline: "5 weeks",
         challenges: [
-          "Maintaining proxy response latency overhead strictly under 5 milliseconds.",
-          "Implementing dynamic route resolution without restarts.",
-          "Constructing robust unit tests for authentication filters."
+          "Managing conflict-free teacher and course allocation workflows.",
+          "Designing efficient relational database structures for academic records.",
+          "Building an intuitive admin dashboard for department management."
         ],
         outcomes: [
-          "Achieved average latency overhead of 3.2ms.",
-          "Integrated Redis token-bucket rate limiting serving 10,000+ operations/min.",
-          "Automated dynamic route syncing from consul configuration registries."
+          "Automated teacher-course assignment workflows reducing manual effort.",
+          "Developed centralized academic management tools for administrators.",
+          "Improved allocation accuracy and simplified departmental scheduling."
         ],
-        liveLink: "https://gateway.carter.design",
-        githubLink: "https://github.com/carter/api-gateway"
+        liveLink: "https://tcasystem.vercel.app/",
+        githubLink: "https://github.com/Sujoy0001/College-project-0.1"
       },
       {
-        id: "kush-portfolio",
-        title: "Kush Portfolio",
+        id: "kushal portfolio",
+        title: "Kushal Portfolio",
         category: "design",
-        shortDescription: "A fully immersive, premium interactive portfolio for standard architectural design studios.",
-        imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
-        liveLink: "https://kush.carter.design"
+        shortDescription: "A modern, premium interactive portfolio crafted to showcase projects, skills, and creative web experiences with smooth animations and a clean professional interface.",
+        imageUrl: img1,
+        liveLink: "https://www.kushprods.site/"
       },
       {
-        id: "nova-ui",
-        title: "Nova Glass UI Kit",
+        id: "Dockra",
+        title: "Unique Dockra workshop website",
         category: "design",
-        shortDescription: "A premium glassmorphic UI library for dark-themed dashboards and agency landing pages.",
-        imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800",
-        liveLink: "https://nova.carter.design"
+        shortDescription: "A modern, premium art marketplace platform crafted to showcase and sell digital artworks with elegant visuals, smooth interactions, and a clean immersive shopping experience.",
+        imageUrl: img2,
+        liveLink: "https://www.uniquedokraworkshop.com/"
       },
       {
-        id: "solaria",
-        title: "Solaria Mobile Mockups",
+        id: "kristi",
+        title: "Kiristi Portfolio",
         category: "design",
-        shortDescription: "High-fidelity solar panel energy monitoring mobile app interfaces designed in Figma.",
-        imageUrl: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800",
-        liveLink: "" // No live link - will show nothing!
+        shortDescription: "A modern, premium interactive portfolio crafted to showcase projects, skills, and creative web experiences with smooth animations and a clean professional interface.",
+        imageUrl: img3,
+        liveLink: "https://www.animeshdey.in/" // No live link - will show nothing!
       },
       {
-        id: "fastapi-rate-limiter",
-        title: "FastAPI Sliding Window Limiter",
+        id: "chatroom",
+        title: "ChatRoom - Anonymous Group Chat Platform",
         category: "contributions",
-        shortDescription: "Contributed an asynchronous sliding-window rate limiting dependency plugin to the FastAPI package ecosytem.",
-        imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=800",
-        liveLink: "https://github.com/fastapi/fastapi"
+        shortDescription: "Designed and developed a real-time group chat platform enabling users to communicate instantly without authentication.",
+        imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://cheatroom.tech/"
       },
       {
-        id: "tailwind-grid-helper",
-        title: "Tailwind CSS Grid Helper",
+        id: "rag-microservice",
+        title: "RAG Chatbot Microservice",
         category: "contributions",
-        shortDescription: "Proposed and pushed an optimization for fractional grid layout calculations in Tailwind CSS grid modules.",
-        imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800",
-        liveLink: "" // No live link - will show nothing!
+        shortDescription: "Built a modular RAG-based microservice for powering AI chatbot applications with semantic document retrieval.",
+        imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800",
+        liveLink: ""
       },
       {
-        id: "ecoscan",
-        title: "EcoScan - AI Trash Classifier",
+        id: "crisisIQ",
+        title: "CrisisIQ - Real-Time Disaster Management Platform",
         category: "hackathon",
-        shortDescription: "Won 1st place in GreenTech Hackathon. Built a computer vision recycling item classifier on the edge.",
-        imageUrl: "https://images.unsplash.com/photo-1532996127610-5975b803a620?auto=format&fit=crop&q=80&w=800",
-        liveLink: "https://ecoscan.devpost.com"
+        shortDescription: "Developed the frontend for a real-time tracking platform designed for hospitals, malls, hotels, and large public venues.",
+        imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+        liveLink: "https://crisis-iq-opal.vercel.app/"
       },
       {
-        id: "docuquery",
-        title: "DocuQuery - RAG Web Extension",
+        id: "catalysms",
+        title: "Catalysms - Agriculture & Farmer Ecosystem",
         category: "hackathon",
-        shortDescription: "Engineered a local browser extension to dynamically query and summarize PDF content using chroma embeddings.",
-        imageUrl: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=800",
-        liveLink: "" // No live link - will show nothing!
+        shortDescription: "Built a full-stack agriculture platform helping farmers manage, promote, and sell products directly through a digital marketplace.",
+        imageUrl: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=800",
+        liveLink: ""
       }
     ]
   },

@@ -10,7 +10,7 @@ export default function FeaturedWorks() {
       <div className="mx-auto max-w-7xl">
 
         {/* Header Section */}
-        <div className="mb-16 flex items-end justify-between border-b border-zinc-200/80 dark:border-zinc-900 pb-8">
+        <div className="mb-16 flex items-end justify-between border-zinc-200/80 dark:border-zinc-900 pb-8">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 px-4 py-1.5 text-xs font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-widest">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
